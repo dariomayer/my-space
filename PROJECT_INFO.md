@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/PROJECT_INFO.md
+PROJECT_INFO.md
 
 # My Profile – Project Info
 

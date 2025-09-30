@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/i18n/request.ts
+//i18n/request.ts
 import {getRequestConfig} from 'next-intl/server';
 import {locales, type Locale} from '../i18n-config';
 

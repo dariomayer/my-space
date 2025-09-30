@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/features/profile/components/hero-section.tsx
+//features/profile/components/hero-section.tsx
 import {getTranslations} from 'next-intl/server';
 
 export async function HeroSection() {

@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/features/profile/components/language-switcher.tsx
+//features/profile/components/language-switcher.tsx
 'use client';
 
 import {usePathname, useRouter} from 'next/navigation';

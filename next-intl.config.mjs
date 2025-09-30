@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/next-intl.config.mjs
+//next-intl.config.mjs
 /** @type {{locales: string[]; defaultLocale: string}} */
 const config = {
   locales: ["it", "en"],

@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/features/i18n/messages/en.ts
+//features/i18n/messages/en.ts
 const messages = {
   common: {
     loading: "Loading...",

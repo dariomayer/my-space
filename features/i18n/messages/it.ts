@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/features/i18n/messages/it.ts
+//features/i18n/messages/it.ts
 const messages = {
   common: {
     loading: "Caricamento...",

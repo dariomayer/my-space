@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/app/[locale]/layout.tsx
+//app/[locale]/layout.tsx
 import type {Metadata} from 'next';
 import type {ReactElement} from 'react';
 import {NextIntlClientProvider} from 'next-intl';
@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'My Profile',
+  title: 'Dario | My Profile',
   description: 'CV minimale, elegante e bilingue (IT/EN)',
 };
 

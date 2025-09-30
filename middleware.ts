@@ -1,4 +1,4 @@
-// /Users/dario/Documents/Progetti/next-core/middleware.ts
+//middleware.ts
 import createMiddleware from 'next-intl/middleware';
 import {locales, defaultLocale} from './i18n-config';
 
