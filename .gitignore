@@ -5,3 +5,11 @@ node_modules
 /dist
 .vscode
 .env*
+
+# TypeScript build artifacts
+*.tsbuildinfo
+src/**/*.js
+src/**/*.d.ts
+!src/**/*.config.js
+!vite.config.js
+!tailwind.config.js
