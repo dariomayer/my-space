@@ -1,0 +1,4 @@
+# my-space/public/robots.txt
+User-agent: *
+Allow: /
+Sitemap: /sitemap.xml

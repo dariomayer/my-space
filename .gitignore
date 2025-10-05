@@ -1,0 +1,7 @@
+# my-space/.gitignore
+node_modules
+.DS_Store
+.dist
+/dist
+.vscode
+.env*

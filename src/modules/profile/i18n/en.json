@@ -1,0 +1,22 @@
+{
+  "name": "Dario Pratola",
+  "role": "Senior Frontend Engineer",
+  "location": "Rome, Italy",
+  "languages": {
+    "italian": "Italian",
+    "english": "English"
+  },
+  "contact": {
+    "email": "dario.pratola@gmail.com",
+    "phone": "+39",
+    "linkedin": "www.linkedin.com/in/dariopratola",
+    "github": "dariomayer"
+  },
+  "description": "I design and build fast, accessible and maintainable web applications with React, TypeScript and modern tooling.",
+  "sections": {
+    "introduction": "Introduction",
+    "experience": "Work Experience",
+    "skills": "Technical skills",
+    "studies": "Studies"
+  }
+}
