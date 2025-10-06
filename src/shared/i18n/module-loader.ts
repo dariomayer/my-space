@@ -26,7 +26,12 @@ export function createModuleI18nLoader(
   }
 
   return async function ensureModuleI18n() {
-    await loadNamespace(i18n.language)
+    // Pre-carica tutte le lingue supportate per evitare race condition al cambio lingua
+    const supportedLngs = i18n.options.supportedLngs
+    const supportedLanguages = (Array.isArray(supportedLngs) ? supportedLngs : ['en', 'it'])
+      .filter((lng: string) => lng !== 'cimode')
+    await Promise.all(supportedLanguages.map((lng: string) => loadNamespace(lng)))
+    
     if (!initializedNamespaces.has(namespace)) {
       initializedNamespaces.add(namespace)
       i18n.on('languageChanged', (lng) => {

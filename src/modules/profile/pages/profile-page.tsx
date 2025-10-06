@@ -1,6 +1,5 @@
 // my-space/src/modules/profile/pages/profile-page.tsx
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { Header } from '@/modules/profile/components/header'
 import { Footer } from '@/modules/app/components/footer'
 import { IntroductionSection } from '@/modules/profile/components/introduction-section'
@@ -13,17 +12,11 @@ import { ensureProfileI18n } from '@/modules/profile/i18n'
 
 export function ProfilePage() {
   const [i18nReady, setI18nReady] = useState(false)
-  const { i18n } = useTranslation()
 
   useEffect(() => {
+    // Pre-carica tutti i namespace (it + en) una sola volta
     ensureProfileI18n().then(() => setI18nReady(true))
   }, [])
-
-  // Ricarica quando cambia la lingua
-  useEffect(() => {
-    setI18nReady(false)
-    ensureProfileI18n().then(() => setI18nReady(true))
-  }, [i18n.language])
 
   if (!i18nReady) {
     return null
