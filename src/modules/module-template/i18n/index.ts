@@ -1,4 +1,4 @@
-// my-space/src/modules/module-template/i18n/index.ts
+// src/modules/module-template/i18n/index.ts
 import { createModuleI18nLoader } from '@/shared/i18n/module-loader'
 
 // Import statici per compatibilità con Vite build

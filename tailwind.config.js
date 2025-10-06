@@ -1,4 +1,4 @@
-// my-space/tailwind.config.js
+// tailwind.config.js
 /**
  * Stub per compatibilità CLI Shadcn con Tailwind v4.
  * Tailwind v4 funziona tramite @import, @plugin e @theme inline nel CSS (vedi src/styles/index.css).

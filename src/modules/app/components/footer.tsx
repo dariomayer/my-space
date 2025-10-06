@@ -1,4 +1,4 @@
-// my-space/src/modules/app/components/footer.tsx
+// src/modules/app/components/footer.tsx
 import { useMemo } from 'react'
 
 export function Footer() {

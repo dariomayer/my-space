@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/language-toggle.tsx
+// src/modules/profile/components/language-toggle.tsx
 import { useTranslation } from 'react-i18next'
 import { Button } from '@/shared/ui/button'
 

@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/skill-category.tsx
+// src/modules/profile/components/skill-category.tsx
 interface SkillCategoryProps {
   title: string
   skills: string[]

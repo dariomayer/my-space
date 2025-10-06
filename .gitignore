@@ -1,4 +1,4 @@
-# my-space/.gitignore
+# .gitignore
 node_modules
 .DS_Store
 .dist

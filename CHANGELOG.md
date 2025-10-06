@@ -1,4 +1,4 @@
-<!-- my-space/CHANGELOG.md -->
+<!-- CHANGELOG.md -->
 # Changelog
 
 Tutte le modifiche note a questo progetto saranno documentate in questo file.

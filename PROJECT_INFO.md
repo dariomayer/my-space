@@ -1,4 +1,4 @@
-<!-- my-space/PROJECT_INFO.md -->
+<!-- PROJECT_INFO.md -->
 # PROJECT_INFO
 
 Questo file è la fonte di verità per tutte le operazioni future. Consultarlo sempre prima di apportare modifiche.

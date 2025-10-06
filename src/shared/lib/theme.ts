@@ -1,4 +1,4 @@
-// my-space/src/shared/lib/theme.ts
+// src/shared/lib/theme.ts
 export type Theme = 'light' | 'dark'
 
 const STORAGE_KEY = 'theme'

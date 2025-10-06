@@ -1,4 +1,4 @@
-// my-space/src/main.tsx
+// src/main.tsx
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
 import { initPromise } from './shared/i18n/config'

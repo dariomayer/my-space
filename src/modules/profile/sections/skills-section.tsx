@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/sections/skills-section.tsx
+// src/modules/profile/sections/skills-section.tsx
 import { useTranslation } from 'react-i18next'
 import { SkillCategory } from '@/modules/profile/components/skill-category'
 

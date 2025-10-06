@@ -1,4 +1,4 @@
-<!-- my-space/README.md -->
+<!-- README.md -->
 # my space
 
 Starter frontend basato su React + Vite + TypeScript con Tailwind v4 e i18n (it/en). Integrazione Shadcn UI prevista come step successivo (vedi note sotto).

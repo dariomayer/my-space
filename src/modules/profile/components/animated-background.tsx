@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/animated-background.tsx
+// src/modules/profile/components/animated-background.tsx
 export function AnimatedBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">

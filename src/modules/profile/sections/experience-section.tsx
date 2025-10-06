@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/sections/experience-section.tsx
+// src/modules/profile/sections/experience-section.tsx
 import { useTranslation } from 'react-i18next'
 import { ExperienceItem } from '@/modules/profile/components/experience-item'
 

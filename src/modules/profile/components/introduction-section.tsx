@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/introduction-section.tsx
+// src/modules/profile/components/introduction-section.tsx
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 

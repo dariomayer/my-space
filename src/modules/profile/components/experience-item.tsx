@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/experience-item.tsx
+// src/modules/profile/components/experience-item.tsx
 interface ExperienceItemProps {
   company: string
   role: string

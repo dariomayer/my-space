@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/sections/studies-section.tsx
+// src/modules/profile/sections/studies-section.tsx
 import { useTranslation } from 'react-i18next'
 import { EducationItem } from '@/modules/profile/components/education-item'
 

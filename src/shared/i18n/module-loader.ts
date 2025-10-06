@@ -1,4 +1,4 @@
-// my-space/src/shared/i18n/module-loader.ts
+// src/shared/i18n/module-loader.ts
 import i18n from '@/shared/i18n/config'
 
 const initializedNamespaces = new Set<string>()

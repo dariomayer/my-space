@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/side-navigation.tsx
+// src/modules/profile/components/side-navigation.tsx
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/shared/lib'

@@ -1,4 +1,4 @@
-// my-space/src/shared/ui/theme-toggle.tsx
+// src/shared/ui/theme-toggle.tsx
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Button } from '@/shared/ui/button'

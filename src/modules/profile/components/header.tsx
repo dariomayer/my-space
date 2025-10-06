@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/header.tsx
+// src/modules/profile/components/header.tsx
 import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'

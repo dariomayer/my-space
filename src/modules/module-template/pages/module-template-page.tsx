@@ -1,4 +1,4 @@
-// my-space/src/modules/module-template/pages/module-template-page.tsx
+// src/modules/module-template/pages/module-template-page.tsx
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ensureModuleTemplateI18n } from '@/modules/module-template/i18n'

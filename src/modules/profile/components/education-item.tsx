@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/components/education-item.tsx
+// src/modules/profile/components/education-item.tsx
 interface EducationItemProps {
   degree: string
   institution: string

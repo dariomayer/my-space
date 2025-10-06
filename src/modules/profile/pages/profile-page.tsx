@@ -1,4 +1,4 @@
-// my-space/src/modules/profile/pages/profile-page.tsx
+// src/modules/profile/pages/profile-page.tsx
 import { useEffect, useState } from 'react'
 import { Header } from '@/modules/profile/components/header'
 import { Footer } from '@/modules/app/components/footer'
