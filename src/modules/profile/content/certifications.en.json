@@ -1,0 +1,14 @@
+[
+  {
+    "title": "AWS Certified Cloud Practitioner",
+    "institution": "Amazon Web Services (AWS)",
+    "date": "2024",
+    "description": "Foundational certification that validates understanding of AWS Cloud concepts, services, security and pricing models."
+  },
+  {
+    "title": "Google Cloud Digital Leader",
+    "institution": "Google Cloud",
+    "date": "2023",
+    "description": "Certification focused on business transformation with Google Cloud, core products, and responsible innovation."
+  }
+]

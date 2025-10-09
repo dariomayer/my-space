@@ -4,6 +4,7 @@ import { Header } from '@/modules/profile/components/header'
 import { Footer } from '@/modules/app/components/footer'
 import { IntroductionSection } from '@/modules/profile/components/introduction-section'
 import { ExperienceSection } from '@/modules/profile/sections/experience-section'
+import { CertificationsSection } from '@/modules/profile/sections/certifications-section'
 import { SkillsSection } from '@/modules/profile/sections/skills-section'
 import { StudiesSection } from '@/modules/profile/sections/studies-section'
 import { AnimatedBackground } from '@/modules/profile/components/animated-background'
@@ -31,15 +32,19 @@ export function ProfilePage() {
         <IntroductionSection />
       </div>
       <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+        <SkillsSection />
+      </div>
+
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
         <ExperienceSection />
+      </div>
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+        <CertificationsSection />
       </div>
       <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
         <StudiesSection />
       </div>
 
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
-        <SkillsSection />
-      </div>
       <Footer />
     </main>
   )

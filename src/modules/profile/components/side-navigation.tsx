@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/shared/lib'
 
-const sectionIds = ['introduction', 'experience', 'studies', 'skills'] as const
+const sectionIds = ['introduction', 'experience', 'certifications', 'studies', 'skills'] as const
 
 export function SideNavigation() {
   const [activeSection, setActiveSection] = useState<string>('introduction')
@@ -11,9 +11,10 @@ export function SideNavigation() {
 
   const sections = [
     { id: 'introduction', label: t('sections.introduction', { defaultValue: 'Introduction' }) },
-    { id: 'experience', label: t('sections.experience') },
-    { id: 'studies', label: t('sections.studies') },
     { id: 'skills', label: t('sections.skills') },
+    { id: 'experience', label: t('sections.experience') },
+    {id: 'certifications', label: t('sections.certifications')},
+    { id: 'studies', label: t('sections.studies') },
   ]
 
   useEffect(() => {

@@ -1,26 +1,11 @@
 // src/modules/profile/sections/studies-section.tsx
 import { useTranslation } from 'react-i18next'
 import { EducationItem } from '@/modules/profile/components/education-item'
-
-const education = [
-  {
-    degree: 'Master of Computer Science',
-    institution: 'University of Technology',
-    period: '2015 - 2017',
-    description:
-      'Specialized in Human-Computer Interaction and User Experience Design. Thesis focused on accessibility in modern web applications.',
-  },
-  {
-    degree: 'Bachelor of Software Engineering',
-    institution: 'Institute of Technology',
-    period: '2011 - 2015',
-    description:
-      'Graduated with honors. Focused on web development, software architecture, and database systems.',
-  },
-]
+import { getEducation } from '@/modules/profile/content/education'
 
 export function StudiesSection() {
-  const { t } = useTranslation('profile')
+  const { t, i18n } = useTranslation('profile')
+  const education = getEducation(i18n.resolvedLanguage || i18n.language)
   return (
     <section id="studies" className="py-16">
       <div className="space-y-16">
@@ -30,7 +15,7 @@ export function StudiesSection() {
           {education.map((edu, index) => (
             <div key={edu.degree}>
               <EducationItem {...edu} />
-              {index < education.length - 1 && <div className="h-px bg-border" />}
+              {index < education.length - 1 && <div className="h-px bg-border my-8" />}
             </div>
           ))}
         </div>

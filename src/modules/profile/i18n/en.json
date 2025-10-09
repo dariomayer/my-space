@@ -1,6 +1,6 @@
 {
   "name": "Dario Pratola",
-  "role": "Senior Frontend Engineer",
+  "role": "Engineer",
   "location": "Bologna, Italy",
   "languages": {
     "italian": "Italian",
@@ -17,6 +17,7 @@
     "introduction": "Introduction",
     "experience": "Work Experience",
     "skills": "Technical skills",
+    "certifications": "Certifications",
     "studies": "Studies"
   }
 }

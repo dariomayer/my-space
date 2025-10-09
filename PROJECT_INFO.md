@@ -18,6 +18,12 @@ Questo file è la fonte di verità per tutte le operazioni future. Consultarlo s
 - `src/modules/app/app.tsx`
 - `src/shared/i18n/config.ts`
 - `src/shared/i18n/{en,it}.json`
+- `src/modules/profile/i18n/{en,it}.json` (namespace `profile`, solo copy UI: titoli sezioni, micro-testi)
+- `src/modules/profile/content/experiences.{en,it}.json`
+- `src/modules/profile/content/education.{en,it}.json`
+- `src/modules/profile/content/certifications.{en,it}.json`
+- `src/modules/profile/content/skills.{en,it}.json`
+- `src/modules/profile/content/{experiences,education,certifications,skills}.ts` (loader per lingua con fallback a EN)
 - `src/styles/index.css`
 
 ## Best practices
@@ -25,6 +31,12 @@ Questo file è la fonte di verità per tutte le operazioni future. Consultarlo s
 - Tipi espliciti in TypeScript
 - Separazione della business logic dai componenti UI (`src/shared/` per servizi, store, util)
 - Aggiornare `CHANGELOG.md` ad ogni release
+
+## Linee guida i18n vs contenuti
+- `i18n/`: SOLO copy UI (etichette, titoli, micro-testi riusabili). Gestito con i18next e namespace `common` (shared) e `profile` (modulo).
+- `content/`: Dati dominio localizzati e strutturati (esperienze, studi, certificazioni, skills) tipizzati in `src/modules/profile/types.ts` e caricati via loader.
+- I loader (`getExperiences`, `getEducation`, `getCertifications`, `getSkills`) scelgono il dataset in base alla lingua corrente (`i18n.resolvedLanguage || i18n.language`) e applicano fallback a EN se la lingua richiesta è vuota.
+- Testi lunghi/listati complessi NON vanno in `i18n`, per evitare file monolitici e chiavi verbose.
 
 ## Tailwind v4 + Shadcn UI
 - Tailwind v4 già importato in `src/styles/index.css` con `@import "tailwindcss";`

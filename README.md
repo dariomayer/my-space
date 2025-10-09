@@ -33,6 +33,16 @@ pnpm preview
 ## i18n
 - Inizializzazione in `src/shared/i18n/config.ts`.
 - Risorse condivise: `src/shared/i18n/{en,it}.json` (namespace `common`).
+- Copy UI del modulo profilo: `src/modules/profile/i18n/{en,it}.json` (namespace `profile`).
+- Contenuti localizzati (dati strutturati):
+  - Esperienze: `src/modules/profile/content/experiences.{en,it}.json`
+  - Studi: `src/modules/profile/content/education.{en,it}.json`
+  - Certificazioni: `src/modules/profile/content/certifications.{en,it}.json`
+  - Competenze: `src/modules/profile/content/skills.{en,it}.json`
+  - Loader lingua con fallback EN: `src/modules/profile/content/{experiences,education,certifications,skills}.ts`
+
+Linee guida:
+- i18n per micro-copy/etichette; content per dataset ricchi (liste/descrizioni). Evitare di inserire contenuti corposi in i18n.
 
 ## Deployment: Cloudflare Pages
 - Build command: `pnpm build`

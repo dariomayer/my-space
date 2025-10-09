@@ -1,0 +1,62 @@
+[
+  {
+    "company": "Alma Mater Studiorum - Università di Bologna — Bologna",
+    "role": "Technical Officer - Building and Sustainability",
+    "period": "12/2021 – Present",
+    "achievements": [
+      "Coordination of building and plant maintenance, management of specialized suppliers, and user interface.",
+      "Specialization in Building Automation (BMS): control, monitoring and diagnostics of plant systems (HVAC, fire protection, video surveillance, lighting).",
+      "Acting as RUP (Project Manager) and Contract Execution Director, ensuring regulatory and technical compliance."
+    ]
+  },
+  {
+    "company": "Champion Europe Group — Carpi (MO)",
+    "role": "EHS Associate",
+    "period": "10/2020 – 11/2021",
+    "achievements": [
+      "Management of the corporate safety system and DVR updates in collaboration with the HSE Manager (RSPP).",
+      "Single point of contact for safety across retail stores in Italy and Europe.",
+      "Coordination of training programs (occupational health and safety, emergencies, HACCP) and performance of technical inspections."
+    ]
+  },
+  {
+    "company": "Rekeep S.p.A./Manutencoop Facility Management S.p.A. — Zola Predosa (BO)",
+    "role": "HSE Officer (Prevention and Protection Service)",
+    "period": "09/2017 – 10/2020",
+    "achievements": [
+      "Supported the development of technical contracts, site inspections, ISO 45001/18001 audits and risk assessments.",
+      "Supported management with waste management, procurement optimization and budget control.",
+      "Advanced data analysis with SAP and Excel (macros, pivot tables, Power BI) for reporting and projections."
+    ]
+  },
+  {
+    "company": "Manutencoop Facility Management S.p.A. — Zola Predosa (BO)",
+    "role": "Internship in Quality, Environment and Safety",
+    "period": "03/2017 – 09/2017",
+    "achievements": [
+      "Support to QHSE document management: drafting DVR, procedures, MUD and registers management.",
+      "Execution of specific risk assessments (chemical, vibrations, manual handling).",
+      "Application of technical regulations (Italian Legislative Decrees 81/08, 152/06, 231/01)."
+    ]
+  },
+  {
+    "company": "Silea S.p.A. — Valmadrera (LC)",
+    "role": "Internship with Alma Mater Studiorum - University of Bologna",
+    "period": "06/2015 – 05/2016",
+    "achievements": [
+      "Analysis and optimization of a flue gas treatment plant.",
+      "Identified critical issues and reduced plant operating costs by 10%.",
+      "Preparation of periodic reports on project progress."
+    ]
+  },
+  {
+    "company": "Basf S.p.A. — Pontecchio Marconi (BO)",
+    "role": "Internship with Alma Mater Studiorum - University of Bologna",
+    "period": "10/2014 – 06/2015",
+    "achievements": [
+      "Redesign of a process line.",
+      "Techno-economic analysis and safety assessment (HAZOP).",
+      "Use of dedicated software for technical analysis and design."
+    ]
+  }
+]

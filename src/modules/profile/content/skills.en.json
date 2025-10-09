@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Frontend Development",
+    "skills": [
+      "React & Next.js",
+      "TypeScript & JavaScript",
+      "HTML5 & CSS3",
+      "Tailwind CSS",
+      "Vue.js",
+      "Responsive Design"
+    ]
+  },
+  {
+    "title": "Design Tools",
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Framer",
+      "Prototyping",
+      "Design Systems"
+    ]
+  },
+  {
+    "title": "Backend & Tools",
+    "skills": [
+      "Node.js",
+      "PostgreSQL",
+      "Git & GitHub",
+      "REST APIs",
+      "CI/CD",
+      "Vercel & AWS"
+    ]
+  },
+  {
+    "title": "Soft Skills",
+    "skills": [
+      "Team Leadership",
+      "Agile/Scrum",
+      "Code Review",
+      "Mentoring",
+      "Technical Writing",
+      "Problem Solving"
+    ]
+  },
+  {
+    "title": "Accessibility",
+    "skills": [
+      "WCAG 2.1 AA/AAA",
+      "ARIA Standards",
+      "Screen Readers",
+      "Keyboard Navigation",
+      "Color Contrast",
+      "Inclusive Design"
+    ]
+  },
+  {
+    "title": "Performance",
+    "skills": [
+      "Core Web Vitals",
+      "Code Splitting",
+      "Lazy Loading",
+      "Image Optimization",
+      "Caching Strategies",
+      "Bundle Analysis"
+    ]
+  }
+]

@@ -11,16 +11,19 @@ export function ExperienceItem({ company, role, period, achievements }: Experien
     <div className="space-y-6">
       <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
         <div>
-          <h3 className="text-2xl font-bold">{company}</h3>
-          <p className="text-lg text-primary font-medium">{role}</p>
+          <h3 className="text-2xl font-bold">{role}</h3>
+          <p className="text-lg text-primary font-medium">{company}</p>
         </div>
-        <span className="text-sm text-muted-foreground">{period}</span>
+        <span className="text-sm text-muted-foreground md:text-right md:whitespace-nowrap">{period}</span>
       </div>
 
       <ul className="space-y-3 text-base leading-relaxed text-foreground">
         {achievements.map((achievement, index) => (
-          <li key={index} className="flex gap-3">
-            <span className="text-muted-foreground mt-1.5">•</span>
+          <li key={index} className="relative pl-7">
+            <span
+              aria-hidden="true"
+              className="absolute left-0 top-[0.55em] inline-block size-1.5 rounded-full bg-muted-foreground"
+            />
             <span>{achievement}</span>
           </li>
         ))}
