@@ -3,8 +3,8 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-import enCommon from './locales/en/common.json'
-import itCommon from './locales/it/common.json'
+import enCommon from './en.json'
+import itCommon from './it.json'
 
 const initPromise = i18n
   .use(LanguageDetector)

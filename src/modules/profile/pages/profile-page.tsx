@@ -23,7 +23,7 @@ export function ProfilePage() {
   }
 
   return (
-    <main className="min-h-dvh flex flex-col gap-8 items-center relative lg:ml-72">
+    <main className="min-h-dvh flex flex-col gap-8 items-center relative lg:ml-72 pb-24 lg:pb-0">
       <AnimatedBackground />
       <SideNavigation />
       <Header />

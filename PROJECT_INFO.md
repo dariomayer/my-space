@@ -17,7 +17,7 @@ Questo file è la fonte di verità per tutte le operazioni future. Consultarlo s
 - `src/main.tsx`
 - `src/modules/app/app.tsx`
 - `src/shared/i18n/config.ts`
-- `src/shared/i18n/locales/{en,it}/common.json`
+- `src/shared/i18n/{en,it}.json`
 - `src/styles/index.css`
 
 ## Best practices

@@ -32,7 +32,7 @@ pnpm preview
 
 ## i18n
 - Inizializzazione in `src/shared/i18n/config.ts`.
-- Risorse: `src/shared/i18n/locales/{it,en}/common.json`.
+- Risorse condivise: `src/shared/i18n/{en,it}.json` (namespace `common`).
 
 ## Deployment: Cloudflare Pages
 - Build command: `pnpm build`
