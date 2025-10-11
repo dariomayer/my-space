@@ -2,8 +2,17 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/shared/lib'
+import { User, Briefcase, Award, GraduationCap, Sparkles } from 'lucide-react'
 
 const sectionIds = ['introduction', 'experience', 'certifications', 'studies', 'skills'] as const
+
+const sectionIcons = {
+  introduction: User,
+  skills: Sparkles,
+  experience: Briefcase,
+  certifications: Award,
+  studies: GraduationCap,
+} as const
 
 export function SideNavigation() {
   const [activeSection, setActiveSection] = useState<string>('introduction')
@@ -86,27 +95,24 @@ export function SideNavigation() {
         </div>
       </nav>
 
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-background/80 backdrop-blur-xl border-t border-border/30 z-50">
-        <div className="relative flex justify-around items-center px-2 py-3">
-          <div
-            className="absolute bottom-0 h-0.5 bg-gradient-to-r from-primary/60 via-primary/80 to-primary/60 shadow-[0_0_12px_hsl(var(--primary)/0.5)] transition-all duration-500 ease-out"
-            style={{
-              left: `${(sections.findIndex((s) => s.id === activeSection) / sections.length) * 100}%`,
-              width: `${100 / sections.length}%`,
-            }}
-          />
+      <nav className="lg:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+        <div className="relative flex items-center gap-1 px-2 py-2 bg-background/40 backdrop-blur-sm border border-border/40 rounded-2xl">
           {sections.map((section) => {
             const isActive = activeSection === section.id
+            const Icon = sectionIcons[section.id as keyof typeof sectionIcons]
             return (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
                 className={cn(
-                  'relative text-sm font-medium transition-all duration-300 px-3 py-2 cursor-pointer',
-                  isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary',
+                  'relative p-2.5 rounded-xl transition-colors cursor-pointer',
+                  isActive 
+                    ? 'bg-primary/10 text-primary border border-primary/40' 
+                    : 'text-muted-foreground hover:text-foreground hover:bg-accent/50 border border-transparent',
                 )}
+                aria-label={section.label}
               >
-                <span className="relative z-10">{String(section.label).split(' ')[0]}</span>
+                <Icon className="w-5 h-5" strokeWidth={2} />
               </button>
             )
           })}
