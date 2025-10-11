@@ -12,8 +12,8 @@ export function SkillsSection() {
       <div className="space-y-16">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t('sections.skills')}</h2>
 
-        {/* Grid con massimo 2 card per riga */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+        {/* Grid: 1 card per riga su tutti i breakpoint */}
+        <div className="grid grid-cols-1 gap-8">
           {skillCategories.map((category) => (
             <SkillCategory key={category.title} {...category} />
           ))}
