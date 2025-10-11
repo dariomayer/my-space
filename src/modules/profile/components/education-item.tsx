@@ -10,7 +10,7 @@ export function EducationItem({ degree, institution, period, description }: Educ
   return (
     <div className="space-y-6">
       <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <div>
+        <div className="min-w-0 md:max-w-[70%]">
           <h3 className="text-2xl font-bold">{degree}</h3>
           <p className="text-lg text-muted-foreground font-medium">{institution}</p>
         </div>

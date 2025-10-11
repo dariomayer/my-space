@@ -11,7 +11,7 @@ export function CertificationItem({ title, institution, date, description }: Cer
   return (
     <div className="space-y-4">
       <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <div>
+        <div className="min-w-0 md:max-w-[70%]">
           <h3 className="text-2xl font-bold">{title}</h3>
           <p className="text-lg text-primary font-medium">{institution}</p>
         </div>

@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "title": "Building Automation & Impianti",
+    "skills": [
+      "Controllo Impianti (HVAC, Antincendio, Videosorveglianza)",
+      "Facility Management",
+      "Efficienza Energetica",
+      "BMS/BAS"
+    ]
+  },
+  {
+    "title": "Cloud & Software Engineering",
+    "skills": [
+      "AWS (Serverless, SDK)",
+      "IBM Cloud",
+      "Python",
+      "Node.js",
+      "React",
+      "JavaScript",
+      "Docker",
+      "Git",
+      "MongoDB",
+      "NOSQL"
+    ]
+  },
+  {
+    "title": "Gestione Progetti & Normativa",
+    "skills": [
+      "Responsabile unico del procedimento (RUP)",
+      "Direttore dell'Esecuzione (DE)",
+      "Gestione Appalti (Codice Appalti)",
+      "Gestione contratti"
+    ]
+  },
+  {
+    "title": "Competenze Trasversali",
+    "skills": [
+      "Problem Solving",
+      "Analisi Dati",
+      "Reportistica",
+      "Gestione Fornitori",
+      "Collaborazione"
+    ]
+  },
+  {
+    "title": "Competenze Linguistiche",
+    "skills": [
+      "Italiano (madrelingua)",
+      "Inglese tecnico (lettura e scrittura)"
+    ]
+  }
+]

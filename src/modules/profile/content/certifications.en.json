@@ -1,14 +1,32 @@
 [
   {
-    "title": "AWS Certified Cloud Practitioner",
-    "institution": "Amazon Web Services (AWS)",
-    "date": "2024",
-    "description": "Foundational certification that validates understanding of AWS Cloud concepts, services, security and pricing models."
+    "title": "Domotica (per tecnici dei sistemi di Building Automation)",
+    "institution": "ENEA",
+    "date": "09/2025"
   },
   {
-    "title": "Google Cloud Digital Leader",
-    "institution": "Google Cloud",
-    "date": "2023",
-    "description": "Certification focused on business transformation with Google Cloud, core products, and responsible innovation."
+    "title": "BACnet Basics",
+    "institution": "The BACnet Institute",
+    "date": "08/2025"
+  },
+  {
+    "title": "KNX ETS eCampus",
+    "institution": "KNX Association",
+    "date": "07/2025"
+  },
+  {
+    "title": "Developing Applications on AWS",
+    "institution": "Amazon Web Services",
+    "date": "02/2024 – 03/2024"
+  },
+  {
+    "title": "Professional certificate: IBM Full Stack Software Developer",
+    "institution": "IBM",
+    "date": "10/2023 – 02/2024"
+  },
+  {
+    "title": "Scrum Fundamentals Certified (SFC™)",
+    "institution": "SCRUMstudy",
+    "date": "09/2021"
   }
 ]
