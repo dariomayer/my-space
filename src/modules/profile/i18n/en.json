@@ -19,5 +19,9 @@
     "skills": "Technical skills",
     "certifications": "Certifications",
     "studies": "Studies"
+  },
+  "certification": {
+    "viewCertificate": "View Certificate",
+    "noCertificateLink": "No certificate link"
   }
 }

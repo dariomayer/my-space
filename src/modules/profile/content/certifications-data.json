@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Domotica (per tecnici dei sistemi di Building Automation)",
+    "badgeUrl": "",
+    "certificateUrl": "https://formazione.enea.it/"
+  },
+  {
+    "title": "BACnet Basics",
+    "badgeUrl": "https://thebacnetinstitute.org/wp-content/uploads/sites/5/2022/05/cropped-TBI_logo_w_tag_Oct-2021.png",
+    "certificateUrl": "https://bacnet.mycrowdwisdom.com/diweb/catalog/cert/view/1/id/e620f072-28dc-466a-952a-401dd56ef7a8"
+  },
+  {
+    "title": "KNX ETS eCampus",
+    "badgeUrl": "https://wbt6.knx.org/pluginfile.php/16/badges/badgeimage/6/f1?refresh=9453",
+    "certificateUrl": "https://wbt6.knx.org/badges/badge.php?hash=c2af58200e076704c3e6cb76b95c6ed7bf50bb4b"
+  },
+  {
+    "title": "Developing Applications on AWS",
+    "badgeUrl": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/dc/92bbf0dede11e8956a710bd6982b76/AWS_logo_RGB.png?auto=format%2Ccompress&dpr=2&h=45",
+    "certificateUrl": "https://www.coursera.org/account/accomplishments/specialization/certificate/VC8GBZ9WPSZ9"
+  },
+  {
+    "title": "Professional certificate: IBM Full Stack Software Developer",
+    "badgeUrl": "https://images.credly.com/size/680x680/images/838edd31-eec8-47de-b329-f7d359c1d20f/blob",
+    "certificateUrl": "https://www.coursera.org/account/accomplishments/specialization/certificate/W2VP43P4CZ9R"
+  },
+  {
+    "title": "Scrum Fundamentals Certified (SFC™)",
+    "badgeUrl": "https://www.scrumstudy.com/Scrum-Images/brand-logo/badge-SFC.png",
+    "certificateUrl": "https://www.scrumstudy.com/certification/verify?type=SFC&number=871208"
+  }
+]

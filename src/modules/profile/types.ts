@@ -10,7 +10,9 @@ export interface Certification {
   title: string
   institution: string
   date: string
-  description: string
+  description?: string
+  badgeUrl?: string
+  certificateUrl?: string
 }
 
 export interface Education {

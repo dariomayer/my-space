@@ -19,5 +19,9 @@
     "skills": "Competenze",
     "certifications": "Certificazioni",
     "studies": "Studi"
+  },
+  "certification": {
+    "viewCertificate": "Visualizza certificato",
+    "noCertificateLink": "Nessun link disponibile"
   }
 }
