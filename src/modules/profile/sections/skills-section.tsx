@@ -8,8 +8,8 @@ export function SkillsSection() {
   const skillCategories = getSkills(i18n.resolvedLanguage || i18n.language)
   
   return (
-    <section id="skills" className="py-16">
-      <div className="space-y-16">
+    <section id="skills">
+      <div className="space-y-12">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t('sections.skills')}</h2>
 
         {/* Grid: 1 card per riga su tutti i breakpoint */}

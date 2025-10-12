@@ -48,7 +48,7 @@ export function SideNavigation() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
-      const offsetTop = element.offsetTop - 100
+      const offsetTop = element.offsetTop - 48
       window.scrollTo({ top: offsetTop, behavior: 'smooth' })
     }
   }

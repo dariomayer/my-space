@@ -6,7 +6,7 @@ export function IntroductionSection() {
   const { t } = useTranslation('profile')
 
   return (
-    <section id="introduction" className="py-16">
+    <section id="introduction">
       <div className="w-full space-y-12">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           <div className="flex-shrink-0">

@@ -7,8 +7,8 @@ export function ExperienceSection() {
   const { t, i18n } = useTranslation('profile')
   const experiences = getExperiences(i18n.resolvedLanguage || i18n.language)
   return (
-    <section id="experience" className="py-16">
-      <div className="space-y-16">
+    <section id="experience">
+      <div className="space-y-12">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t('sections.experience')}</h2>
 
         <div className="space-y-12">

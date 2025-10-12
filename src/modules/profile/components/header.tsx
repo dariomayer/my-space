@@ -1,5 +1,5 @@
 // src/modules/profile/components/header.tsx
-import { Moon, Sun } from 'lucide-react'
+import { Moon, Sun, Code2, RefreshCw, ExternalLink } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { applyTheme, getInitialTheme, toggleTheme, type Theme } from '@/shared/lib/theme'
@@ -10,7 +10,6 @@ export function Header() {
   const { i18n } = useTranslation()
   const [mounted, setMounted] = useState(false)
   const [theme, setThemeState] = useState<Theme>('light')
-  const [currentTime, setCurrentTime] = useState('')
 
   useEffect(() => {
     const initial = getInitialTheme()
@@ -18,18 +17,6 @@ export function Header() {
     setThemeState(initial)
     setMounted(true)
 
-    // Update time every second
-    const updateTime = () => {
-      const now = new Date()
-      const hours = String(now.getHours()).padStart(2, '0')
-      const minutes = String(now.getMinutes()).padStart(2, '0')
-      const seconds = String(now.getSeconds()).padStart(2, '0')
-      setCurrentTime(`${hours}:${minutes}:${seconds}`)
-    }
-
-    updateTime()
-    const interval = setInterval(updateTime, 1000)
-    return () => clearInterval(interval)
   }, [])
 
   const switchLocale = (locale: string) => {
@@ -43,12 +30,39 @@ export function Header() {
 
   return (
     <header className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 pt-8">
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
-        {/* Orario */}
-        <div className="text-sm font-medium tabular-nums text-muted-foreground">{currentTime}</div>
+      <div className="flex items-center justify-between gap-4 border-b border-border/40 pb-4">
+        
+        {/* Tech Stack Info */}
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-3">
+            <Code2 className="h-4 w-4 text-primary flex-shrink-0" />
+            <p className="text-xs text-foreground/80">
+              Built by <span className="font-semibold text-foreground">Dario Pratola</span> using{' '}
+              <span className="font-medium text-primary">React</span> &{' '}
+              <span className="font-medium text-primary">TypeScript</span> with{' '}
+              <span className="font-medium text-primary">AI pair programming</span>
+            </p>
+          </div>
+          <div className="flex items-center gap-3">
+            <RefreshCw className="h-4 w-4 text-primary flex-shrink-0" />
+            <p className="text-xs text-foreground/80">
+              Continuously deployed to{' '}
+              <span className="font-medium text-primary">Cloudflare</span> from{' '}
+              <a
+                href="https://github.com/dariomayer/my-space"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-medium text-primary underline transition-colors"
+              >
+                GitHub
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            </p>
+          </div>
+        </div>
 
         {/* Switcher Lingua e Tema */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-shrink-0">
           {/* Language Switcher */}
           <div className="flex gap-2">
             {locales.map((locale) => (

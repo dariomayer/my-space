@@ -7,7 +7,7 @@ export function CertificationsSection() {
   const { t, i18n } = useTranslation('profile')
   const certifications = getCertifications(i18n.resolvedLanguage || i18n.language)
   return (
-    <section id="certifications" className="py-16">
+    <section id="certifications">
       <div className="space-y-12">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{t('sections.certifications')}</h2>
         <div className="space-y-12">

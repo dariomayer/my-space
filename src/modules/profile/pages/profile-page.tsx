@@ -24,24 +24,23 @@ export function ProfilePage() {
   }
 
   return (
-    <main className="min-h-dvh flex flex-col gap-8 items-center relative lg:ml-72 pb-24 lg:pb-0">
+    <main className="min-h-dvh flex flex-col items-center relative lg:ml-72 pb-24 lg:pb-0">
       <AnimatedBackground />
       <SideNavigation />
       <Header />
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 my-24">
         <IntroductionSection />
       </div>
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 mb-24">
         <SkillsSection />
       </div>
-
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 mb-24">
         <ExperienceSection />
       </div>
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 mb-24">
         <CertificationsSection />
       </div>
-      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24">
+      <div className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 mb-24">
         <StudiesSection />
       </div>
 
