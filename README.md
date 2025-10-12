@@ -5,6 +5,75 @@ A modern, responsive personal portfolio website built with cutting-edge web tech
 
 **Built by Dario Pratola using React & TypeScript with AI pair programming, continuously deployed to Cloudflare from GitHub.**
 
+---
+
+## 🚀 Use This Template for Your Resume
+
+Want to create your own professional portfolio? This template is perfect for you! Here's why:
+
+✨ **Key Features:**
+- 🌍 **Multilingual support** - Easily add multiple languages for your content
+- 📱 **Fully responsive** - Looks great on all devices
+- ⚡ **Lightning fast** - Built with Vite for optimal performance
+- 🎨 **Modern design** - Clean, professional UI with Tailwind CSS
+- ♿ **Accessible** - Built with accessibility best practices
+- 🔧 **Easy to customize** - Well-structured, modular codebase
+- 🚀 **Free deployment** - Deploy to Cloudflare Pages in minutes
+
+### 🎯 Perfect For:
+- Software developers and engineers
+- Designers and creatives
+- Freelancers and consultants
+- Anyone looking for a modern, professional online presence
+
+## Structure
+- UI modules in `src/modules/`
+- Domain logic and services in `src/shared/` separated from UI components
+
+
+### 📝 How to Get Started:
+
+#### 1. Fork or Clone the Repository
+```bash
+# Option A: Fork on GitHub (recommended)
+# Click the "Fork" button at the top of this repository
+
+# Option B: Clone directly
+git clone https://github.com/dariopratola/my-space.git
+cd my-space
+```
+
+#### 2. Install Dependencies
+```bash
+pnpm install
+```
+
+#### 3. Customize Your Content
+Edit the JSON files in `src/modules/profile/content/`:
+- `experiences.{en,it}.json` - Your work experience
+- `education.{en,it}.json` - Your education history
+- `certifications-data.json` - Your certifications
+- `skills.{en,it}.json` - Your technical skills
+
+Update personal information in:
+- `src/shared/i18n/{en,it}.json` - Common translations
+- `src/modules/profile/i18n/{en,it}.json` - Profile-specific text
+
+#### 4. Test Locally
+```bash
+pnpm dev
+```
+Open `http://localhost:5173` to see your portfolio
+
+#### 5. Deploy to Cloudflare Pages
+- Push your changes to GitHub
+- Connect your repository to Cloudflare Pages
+- Build command: `pnpm build`
+- Output directory: `dist`
+
+For more info see: https://developers.cloudflare.com/pages/framework-guides/deploy-a-vite3-project/
+
+💡 **No coding required for content updates!** All your professional information (experience, education, skills, certifications) is stored in easy-to-edit JSON files.
 
 
 ## Technologies
@@ -32,45 +101,6 @@ This project leverages modern web technologies to create a fast, accessible, and
 - **ESLint** - Code linting and formatting
 - **TypeScript** - Advanced type checking with strict configuration
 
-### Deployment
-- **Cloudflare Pages** - Global content delivery network for fast, secure deployment
-
-## Requirements
-- pnpm
-- Node 18+
-
-## Start
-```bash
-pnpm install
-pnpm dev
-```
-
-## Build
-```bash
-pnpm build
-pnpm preview
-```
-
-## i18n
-- Configuration in `src/shared/i18n/config.ts`.
-- Shared resources: `src/shared/i18n/{en,it}.json` (namespace `common`).
-- Profile module UI copy: `src/modules/profile/i18n/{en,it}.json` (namespace `profile`).
-- Localized content (structured data):
-  - Experiences: `src/modules/profile/content/experiences.{en,it}.json`
-  - Education: `src/modules/profile/content/education.{en,it}.json`
-  - Certifications: `src/modules/profile/content/certifications.{en,it}.json`
-  - Skills: `src/modules/profile/content/skills.{en,it}.json`
-  - Language loaders with EN fallback: `src/modules/profile/content/{experiences,education,certifications,skills}.ts`
-
-
-## Deployment: Cloudflare Pages
-- Build command: `pnpm build`
-- Build output: `dist`
-- Guide: https://developers.cloudflare.com/pages/framework-guides/deploy-a-vite3-project/
-
-## Structure
-- UI modules in `src/modules/`
-- Domain logic and services in `src/shared/` separated from UI components
 
 ## License
 - MIT © Dario Pratola (see `LICENSE`).

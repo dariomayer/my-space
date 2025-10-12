@@ -23,9 +23,9 @@ export function CertificationItem({
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col md:flex-row md:items-start gap-4">
+      <div className="flex flex-col-reverse md:flex-row md:items-start gap-4">
         {/* Badge e Link */}
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col md:items-center items-start gap-3">
           {/* Badge */}
           {badgeUrl ? (
             <img
