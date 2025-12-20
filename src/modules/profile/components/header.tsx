@@ -3,6 +3,7 @@ import { Moon, Sun, Code2, RefreshCw, ExternalLink } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { applyTheme, getInitialTheme, toggleTheme, type Theme } from '@/shared/lib/theme'
+import { CvDownloadButton } from '@/modules/profile/components/cv/download-button'
 
 const locales = ['it', 'en'] as const
 
@@ -61,8 +62,10 @@ export function Header() {
           </div>
         </div>
 
-        {/* Switcher Lingua e Tema */}
-        <div className="flex items-center gap-3 flex-shrink-0">
+        {/* Switcher Lingua, Download CV e Tema */}
+        <div className="flex items-center gap-4 flex-shrink-0">
+          {/* Pulsante Download CV */}
+          <CvDownloadButton />
           {/* Language Switcher */}
           <div className="flex gap-2">
             {locales.map((locale) => (

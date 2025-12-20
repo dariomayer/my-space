@@ -39,7 +39,7 @@ Want to create your own professional portfolio? This template is perfect for you
 # Click the "Fork" button at the top of this repository
 
 # Option B: Clone directly
-git clone https://github.com/dariopratola/my-space.git
+git clone https://github.com/dariomayer/my-space.git
 cd my-space
 ```
 

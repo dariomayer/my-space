@@ -9,7 +9,7 @@ import { SkillsSection } from '@/modules/profile/sections/skills-section'
 import { StudiesSection } from '@/modules/profile/sections/studies-section'
 import { AnimatedBackground } from '@/modules/profile/components/animated-background'
 import { SideNavigation } from '@/modules/profile/components/side-navigation'
-import { ensureProfileI18n } from '@/modules/profile/i18n'
+import { ensureProfileI18n } from '@/modules/profile/content/profile'
 
 export function ProfilePage() {
   const [i18nReady, setI18nReady] = useState(false)

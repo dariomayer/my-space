@@ -1,9 +1,9 @@
-// src/modules/profile/i18n/index.ts
+// src/modules/profile/content/profile.ts
 import { createModuleI18nLoader } from '@/shared/i18n/module-loader'
 
 // Import statici per compatibilità con Vite build
-import en from './en.json'
-import it from './it.json'
+import en from './profile.en.json'
+import it from './profile.it.json'
 
 const translations: Record<string, unknown> = { en, it }
 
