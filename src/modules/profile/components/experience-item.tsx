@@ -1,9 +1,11 @@
 // src/modules/profile/components/experience-item.tsx
+import { parseMarkdownToReact } from '@/shared/lib/text-parser';
+
 interface ExperienceItemProps {
   company: string
   role: string
   period: string
-  achievements: string[]
+  achievements: string[] | string
 }
 
 export function ExperienceItem({ company, role, period, achievements }: ExperienceItemProps) {
@@ -17,17 +19,23 @@ export function ExperienceItem({ company, role, period, achievements }: Experien
         <span className="text-sm text-muted-foreground md:text-right md:whitespace-nowrap">{period}</span>
       </div>
 
-      <ul className="space-y-3 text-base leading-relaxed text-foreground">
-        {achievements.map((achievement, index) => (
-          <li key={index} className="relative pl-7">
-            <span
-              aria-hidden="true"
-              className="absolute left-0 top-[0.55em] inline-block size-1.5 rounded-full bg-muted-foreground"
-            />
-            <span>{achievement}</span>
-          </li>
-        ))}
-      </ul>
+      {Array.isArray(achievements) ? (
+        <ul className="space-y-3 text-base leading-relaxed text-foreground">
+          {achievements.map((achievement: string, index: number) => (
+            <li key={index} className="relative pl-7">
+              <span
+                aria-hidden="true"
+                className="absolute left-0 top-[0.55em] inline-block size-1.5 rounded-full bg-muted-foreground"
+              />
+              <span>{achievement}</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-base leading-relaxed text-foreground">
+          {parseMarkdownToReact(achievements)}
+        </p>
+      )}
     </div>
   )
 }

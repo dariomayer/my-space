@@ -1,5 +1,6 @@
 // src/modules/profile/components/cv/cv-document.tsx
 import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { parseMarkdownToPdf } from "@/shared/lib/text-parser";
 
 // Usa font standard ATS-friendly - Helvetica è già disponibile in React-PDF
 
@@ -147,7 +148,7 @@ type Experience = {
   company: string;
   role: string;
   period: string;
-  achievements: string[];
+  achievements: string[] | string;
 };
 
 type Education = {
@@ -159,6 +160,12 @@ type Education = {
 type SkillCategory = {
   title: string;
   skills: string[];
+};
+
+type Certification = {
+  title: string;
+  institution: string;
+  date: string;
 };
 
 type CvDocumentProps = {
@@ -174,9 +181,25 @@ type CvDocumentProps = {
     experiences: Experience[];
     education: Education[];
     skills: SkillCategory[];
+    certifications: Certification[];
   };
   language: string;
 };
+
+// Componente helper per renderizzare testo markdown in React-PDF
+function MarkdownText({ text, style }: { text: string; style?: any }) {
+  const parts = parseMarkdownToPdf(text);
+
+  return (
+    <Text style={style}>
+      {parts.map((part, index) => (
+        <Text key={index} style={part.bold ? { fontWeight: "bold" } : undefined}>
+          {part.text}
+        </Text>
+      ))}
+    </Text>
+  );
+}
 
 export function CvDocument({ data, language }: CvDocumentProps) {
   const isItalian = language === "it";
@@ -188,6 +211,7 @@ export function CvDocument({ data, language }: CvDocumentProps) {
       : "PROFESSIONAL EXPERIENCE",
     education: isItalian ? "FORMAZIONE" : "EDUCATION",
     skills: isItalian ? "COMPETENZE" : "SKILLS",
+    certifications: isItalian ? "CERTIFICAZIONI" : "CERTIFICATIONS",
   };
 
   return (
@@ -230,17 +254,6 @@ export function CvDocument({ data, language }: CvDocumentProps) {
           </View>
         </View>
 
-        {/* Competenze */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{sectionTitles.skills}</Text>
-          {data.skills.map((category, index) => (
-            <View key={index} style={styles.skillsSection}>
-              <Text style={styles.skillsTitle}>{category.title}:</Text>
-              <Text style={styles.skillItem}>{category.skills.join(", ")}</Text>
-            </View>
-          ))}
-        </View>
-
         {/* Esperienza Professionale */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{sectionTitles.experience}</Text>
@@ -253,11 +266,31 @@ export function CvDocument({ data, language }: CvDocumentProps) {
                 </View>
                 <Text style={styles.period}>{exp.period}</Text>
               </View>
-              {exp.achievements.map((achievement, achIndex) => (
-                <Text key={achIndex} style={styles.achievement}>
-                  - {achievement}
-                </Text>
-              ))}
+              {Array.isArray(exp.achievements) ? (
+                exp.achievements.map((achievement: string, achIndex: number) => (
+                  <Text key={achIndex} style={styles.achievement}>
+                    - {achievement}
+                  </Text>
+                ))
+              ) : (
+                <MarkdownText text={exp.achievements} style={styles.achievement} />
+              )}
+            </View>
+          ))}
+        </View>
+
+        {/* Certificazioni */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{sectionTitles.certifications}</Text>
+          {data.certifications.map((cert, index) => (
+            <View key={index} style={styles.job}>
+              <View style={styles.jobHeader}>
+                <View>
+                  <Text style={styles.jobTitle}>{cert.title}</Text>
+                  <Text style={styles.company}>{cert.institution}</Text>
+                </View>
+                <Text style={styles.period}>{cert.date}</Text>
+              </View>
             </View>
           ))}
         </View>
@@ -277,6 +310,18 @@ export function CvDocument({ data, language }: CvDocumentProps) {
             </View>
           ))}
         </View>
+
+                {/* Competenze */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{sectionTitles.skills}</Text>
+          {data.skills.map((category, index) => (
+            <View key={index} style={styles.skillsSection}>
+              <Text style={styles.skillsTitle}>{category.title}:</Text>
+              <Text style={styles.skillItem}>{category.skills.join(", ")}</Text>
+            </View>
+          ))}
+        </View>
+
       </Page>
     </Document>
   );

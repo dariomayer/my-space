@@ -8,12 +8,14 @@ import skillsIt from '@/modules/profile/content/skills.it.json';
 import skillsEn from '@/modules/profile/content/skills.en.json';
 import profileIt from '@/modules/profile/content/profile.it.json';
 import profileEn from '@/modules/profile/content/profile.en.json';
+import certificationsIt from '@/modules/profile/content/certifications.it.json';
+import certificationsEn from '@/modules/profile/content/certifications.en.json';
 
 type Experience = {
   company: string;
   role: string;
   period: string;
-  achievements: string[];
+  achievements: string[] | string;
 };
 
 type Education = {
@@ -25,6 +27,12 @@ type Education = {
 type SkillCategory = {
   title: string;
   skills: string[];
+};
+
+type Certification = {
+  title: string;
+  institution: string;
+  date: string;
 };
 
 type CvData = {
@@ -40,6 +48,7 @@ type CvData = {
   experiences: Experience[];
   education: Education[];
   skills: SkillCategory[];
+  certifications: Certification[];
 };
 
 export function useCvData(): CvData {
@@ -50,6 +59,7 @@ export function useCvData(): CvData {
   const education = language === 'it' ? educationIt : educationEn;
   const skills = language === 'it' ? skillsIt : skillsEn;
   const profile = language === 'it' ? profileIt : profileEn;
+  const certifications = language === 'it' ? certificationsIt : certificationsEn;
 
   const phone = import.meta.env.VITE_PHONE_NUMBER;
 
@@ -65,5 +75,6 @@ export function useCvData(): CvData {
     experiences,
     education,
     skills,
+    certifications,
   };
 }

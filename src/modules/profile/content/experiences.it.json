@@ -3,60 +3,30 @@
         "company": "Alma Mater Studiorum - Università di Bologna — Bologna",
         "role": "Funzionario - Area Tecnica Edilizia e Sostenibilità",
         "period": "12/2021 – Presente",
-        "achievements": [
-            "Coordinamento manutenzione strutture e impianti, gestione fornitori specializzati e interfaccia con l'utenza",
-            "Specializzazione in Building Automation (BMS): controllo, monitoraggio e diagnostica di sistemi impiantistici (HVAC, antincendio, videosorveglianza, illuminazione)",
-            "Ricopro i ruoli di RUP e Direttore dell'Esecuzione, garantendo conformità normativa e tecnica"
-        ]
+        "achievements": "Contribuisco attivamente al coordinamento della manutenzione di strutture e impianti complessi, gestendo fornitori specializzati e interfacciandomi con l’utenza. Ho sviluppato una solida specializzazione in **Building Automation (BMS)**, occupandomi del controllo, monitoraggio e diagnostica di impianti **HVAC, antincendio, videosorveglianza e illuminazione**, con utilizzo quotidiano di **Siemens Desigo CC** e competenze sul protocollo **KNX**. Nei ruoli di **RUP** e **Direttore dell’Esecuzione** garantisco la piena conformità normativa e tecnica lungo l’intero ciclo di vita di lavori e servizi."
     },
     {
         "company": "Champion Europe Group — Carpi (MO)",
         "role": "EHS Associate",
         "period": "10/2020 – 11/2021",
-        "achievements": [
-            "Gestione del sistema sicurezza aziendale e aggiornamento DVR in collaborazione con RSPP",
-            "Referente unico sicurezza per punti vendita in Italia ed Europa",
-            "Coordinamento programmi formativi (salute e sicurezza sul lavoro, emergenze, HACCP) e conduzione sopralluoghi tecnici"
-        ]
+        "achievements": "Gestione del sistema di salute e sicurezza aziendale e aggiornamento DVR in collaborazione con RSPP. Referente sicurezza per sedi e punti vendita in Italia ed Europa, con coordinamento della formazione e esecuzione di audit."
     },
     {
-        "company": "Rekeep S.p.A. — Zola Predosa (BO)",
-        "role": "Addetto Servizio Prevenzione e Protezione",
-        "period": "09/2017 – 10/2020",
-        "achievements": [
-            "Supervisionato lo sviluppo di commesse tecniche, sopralluoghi, audit ISO 45001/18001 e valutazioni dei rischi",
-            "Supporto alla direzione per la gestione dei rifiuti, ottimizzazione acquisti e controllo del budget",
-            "Analisi dati avanzate con SAP ed Excel (macro, tabelle pivot, Power BI) per reporting e proiezioni"
-        ]
-    },
-    {
-        "company": "Manutencoop Facility Management S.p.A. — Zola Predosa (BO)",
-        "role": "Tirocinio nell’area qualità, ambiente e sicurezza",
-        "period": "03/2017 – 09/2017",
-        "achievements": [
-            "Supporto alla gestione documentale QHSE: redazione DVR, procedure, MUD e gestione registri",
-            "Esecuzione di valutazioni di rischio specifiche (chimico, vibrazioni, movimentazione manuale carichi)",
-            "Applicazione di normative tecniche (D.Lgs. 81/08, 152/06, 231/01)"
-        ]
+        "company": "Manutencoop Facility Management S.p.A. / Rekeep S.p.A. — Zola Predosa (BO)",
+        "role": "Addetto Servizio Prevenzione e Protezione - ASPP",
+        "period": "03/2017 – 10/2020",
+        "achievements": "Supporto tecnico a commesse complesse con sopralluoghi, audit **ISO 45001/18001** e valutazioni dei rischi. Attività di gestione documentale **QHSE**, redazione di DVR e applicazione della normativa tecnica (**D.Lgs. 81/08, 152/06**). Analisi dati e reporting a supporto della direzione tramite **SAP**, **Excel avanzato** e **Power BI**."
     },
     {
         "company": "Silea S.p.A. — Valmadrera (LC)",
         "role": "Internship con Alma Mater Studiorum - Università di Bologna",
         "period": "06/2015 – 05/2016",
-        "achievements": [
-            "Analisi e ottimizzazione di un impianto di trattamento fumi",
-            "Individuazione le criticità e riduzione del 10% i costi di gestione dell’impianto",
-            "Elaborazione di report periodici sull’avanzamento del progetto"
-        ]
+        "achievements": "Analisi e ottimizzazione di un impianto di trattamento fumi con riduzione dei costi operativi. Redazione di report tecnici e monitoraggio dell’avanzamento progettuale."
     },
     {
         "company": "Basf S.p.A. — Pontecchio Marconi (BO)",
         "role": "Internship con Alma Mater Studiorum - Università di Bologna",
         "period": "10/2014 – 06/2015",
-        "achievements": [
-            "Riprogettazione di una linea di processo",
-            "Analisi tecnico-economica e valutazione di sicurezza (HAZOP)",
-            "Utilizzo di software specifici per l'analisi e la progettazione tecnica"
-        ]
+        "achievements": "Riprogettazione di una linea di processo con analisi tecnico-economica e valutazione di sicurezza (HAZOP). Utilizzo di software specialistici per l’analisi e la progettazione tecnica."
     }
 ]
