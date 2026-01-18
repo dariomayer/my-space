@@ -1,14 +1,14 @@
 [
   {
     "title": "KNX Basic course",
-    "badgeUrl": "/src/modules/profile/assets/badges/KNX-basic-partner.png",
-    "certificateUrl": "/src/modules/profile/assets/certificates/KNX-basic-partner.pdf"
+    "badgeUrl": "/badges/KNX-basic-partner.png",
+    "certificateUrl": "/certificates/KNX-basic-partner.pdf"
 
   },
   {
     "title": "Domotica (per tecnici dei sistemi di Building Automation)",
     "badgeUrl": "",
-    "certificateUrl": "/src/modules/profile/assets/certificates/Enea-domotica.pdf"
+    "certificateUrl": "/certificates/Enea-domotica.pdf"
   },
   {
     "title": "BACnet Basics",
