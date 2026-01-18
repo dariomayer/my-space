@@ -1,5 +1,10 @@
 [
   {
+    "title": "KNX Basic course",
+    "institution": "KNX Association",
+    "date": "01/2026"
+  },
+  {
     "title": "Domotica (per tecnici dei sistemi di Building Automation)",
     "institution": "ENEA - Agenzia nazionale per le nuove tecnologie, l'energia e lo sviluppo sostenibile",
     "date": "09/2025"
@@ -8,11 +13,6 @@
     "title": "BACnet Basics",
     "institution": "The BACnet Institute",
     "date": "08/2025"
-  },
-  {
-    "title": "KNX ETS eCampus",
-    "institution": "KNX Association",
-    "date": "07/2025"
   },
   {
     "title": "Developing Applications on AWS",

@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc -b --noEmit",
-    "preview": "vite preview --port 4173"
+    "preview": "vite preview --port 4173",
+    "git-auto": "./git-auto.sh"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

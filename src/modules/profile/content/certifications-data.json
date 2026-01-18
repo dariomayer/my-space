@@ -1,18 +1,19 @@
 [
   {
+    "title": "KNX Basic course",
+    "badgeUrl": "/src/modules/profile/assets/badges/KNX-basic-partner.png",
+    "certificateUrl": "/src/modules/profile/assets/certificates/KNX-basic-partner.pdf"
+
+  },
+  {
     "title": "Domotica (per tecnici dei sistemi di Building Automation)",
     "badgeUrl": "",
-    "certificateUrl": "https://formazione.enea.it/"
+    "certificateUrl": "/src/modules/profile/assets/certificates/Enea-domotica.pdf"
   },
   {
     "title": "BACnet Basics",
     "badgeUrl": "https://thebacnetinstitute.org/wp-content/uploads/sites/5/2022/05/cropped-TBI_logo_w_tag_Oct-2021.png",
     "certificateUrl": "https://bacnet.mycrowdwisdom.com/diweb/catalog/cert/view/1/id/e620f072-28dc-466a-952a-401dd56ef7a8"
-  },
-  {
-    "title": "KNX ETS eCampus",
-    "badgeUrl": "https://wbt6.knx.org/pluginfile.php/16/badges/badgeimage/6/f1?refresh=9453",
-    "certificateUrl": "https://wbt6.knx.org/badges/badge.php?hash=c2af58200e076704c3e6cb76b95c6ed7bf50bb4b"
   },
   {
     "title": "Developing Applications on AWS",
