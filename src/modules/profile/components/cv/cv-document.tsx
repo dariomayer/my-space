@@ -250,7 +250,7 @@ export function CvDocument({ data, language }: CvDocumentProps) {
 
           {/* Profilo Professionale integrato nell'header */}
           <View>
-            <Text style={styles.summary}>{data.summary}</Text>
+            <MarkdownText text={data.summary} style={styles.summary} />
           </View>
         </View>
 

@@ -1,6 +1,7 @@
 // src/modules/profile/components/introduction-section.tsx
 import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { parseMarkdownToReact } from '@/shared/lib/text-parser'
 
 export function IntroductionSection() {
   const { t } = useTranslation('profile')
@@ -76,7 +77,7 @@ export function IntroductionSection() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-base leading-relaxed text-foreground">{t('description')}</p>
+              <p className="text-base leading-relaxed text-foreground">{parseMarkdownToReact(t('description'))}</p>
             </div>
           </div>
         </div>
