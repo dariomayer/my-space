@@ -19,9 +19,16 @@ export function CvDownloadButton() {
       }}
     >
       {({ loading }) => (
-        <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+        <div
+          className={`flex items-center gap-2 text-xs font-medium transition-colors ${
+            loading
+              ? 'text-muted-foreground opacity-50 cursor-not-allowed pointer-events-none'
+              : 'text-muted-foreground hover:text-foreground cursor-pointer'
+          }`}
+          aria-disabled={loading}
+        >
           <Download className="h-4 w-4" />
-          <span>{loading ? 'Generating...' : 'CV'}</span>
+          <span>Download Resume</span>
         </div>
       )}
     </PDFDownloadLink>

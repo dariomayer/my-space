@@ -31,7 +31,7 @@ export function Header() {
 
   return (
     <header className="w-full max-w-5xl px-6 md:px-12 lg:px-16 xl:px-24 pt-8">
-      <div className="flex items-center justify-between gap-4 border-b border-border/40 pb-4">
+      <div className="flex flex-col gap-4 border-b border-border/40 pb-4 sm:flex-row sm:items-center sm:justify-between">
         
         {/* Tech Stack Info */}
         <div className="flex flex-col gap-2">
@@ -63,7 +63,7 @@ export function Header() {
         </div>
 
         {/* Switcher Lingua, Download CV e Tema */}
-        <div className="flex items-center gap-4 flex-shrink-0">
+        <div className="flex w-full items-center gap-4 sm:w-auto sm:flex-shrink-0 sm:justify-end">
           {/* Pulsante Download CV */}
           <CvDownloadButton />
           {/* Language Switcher */}

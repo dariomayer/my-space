@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     color: "#2D3748",
   },
   dividerLine: {
-    height: 1,
+    height: 0.6,
     backgroundColor: "#E1E4E8",
     marginVertical: 10,
   },
@@ -311,12 +311,14 @@ export function CvDocument({ data, language }: CvDocumentProps) {
         </View>
 
         {/* Certificazioni */}
-        <View style={styles.section}>
+        <View style={styles.section} 
+        //break
+        >
           <Text style={styles.sectionTitle}>
             {sectionTitles.certifications}
           </Text>
           {data.certifications.map((cert, index) => (
-            <View key={index} style={styles.job}>
+            <View key={index} style={styles.job} wrap={false}>
               <View style={styles.jobHeader}>
                 <View>
                   <Text style={styles.jobTitle}>{cert.title}</Text>

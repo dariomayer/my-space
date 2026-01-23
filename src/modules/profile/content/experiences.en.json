@@ -3,57 +3,30 @@
     "company": "Alma Mater Studiorum - Università di Bologna — Bologna",
     "role": "Building Management Specialist",
     "period": "12/2021 – Present",
-    "achievements": [
-      "Facility and system maintenance coordination, specialized in suppliers management, and users/stakeholders mediation",
-      "Specialized in Building Automation (BMS), providing monitoring and diagnostics for building systems (HVAC, fire protection, CCTV, lighting)",
-      "Experience as Contract Manager and Execution Director, ensuring strict regulatory and technical compliance"  ]
+    "achievements": "I actively contribute to the coordination of maintenance activities for complex buildings and systems, managing suppliers and interfacing with end users. I have developed strong expertise in **Building Automation (BMS)**, working on control, monitoring and diagnostics of **HVAC, fire protection, video surveillance and lighting systems**, with daily use of **Siemens Desigo CC** and knowledge of the **KNX** protocol. In the roles of **RUP** (Contract Manager) and **Execution Director**, I ensure full regulatory and technical compliance throughout the entire lifecycle of works and services."
   },
   {
     "company": "Champion Europe Group — Carpi (MO)",
     "role": "EHS Associate",
     "period": "10/2020 – 11/2021",
-    "achievements": [
-      "Company safety system management and update of the Risk Assessment Document (DVR) in collaboration with the Head of the Prevention and Protection Service (RSPP)",
-      "Safety sales points representative across Italy and Europe",
-      "Training programs' coordination (workplace health and safety, emergencies, HACCP) and technical inspections/site surveys management"    ]
+    "achievements": "Management of the corporate health and safety system and update of risk assessments (DVR) in collaboration with the HSE Manager. **Safety focal point** for offices and retail stores in **Italy and Europe**, coordinating training activities and conducting audits."
   },
   {
-    "company": "Rekeep S.p.A. — Zola Predosa (BO)",
-    "role": "HSE Officer (Prevention and Protection Service)",
-    "period": "09/2017 – 10/2020",
-    "achievements": [
-      "Supervision of technical project development, on-site inspections, ISO 45001/18001 audits, and risk assessments",
-      "Support for management in waste management, procurement optimisation, and budget monitoring",
-      "Performed advanced data analysis with SAP and Excel (macros, pivot tables, Power BI) for reporting and projections"    ]
-  },
-  {
-    "company": "Manutencoop Facility Management S.p.A. — Zola Predosa (BO)",
-    "role": "Quality, Environment, and Safety Internship",
-    "period": "03/2017 – 09/2017",
-    "achievements": [
-      "Support to QHSE document management: drafting the Risk Assessment Document (DVR), procedures, annual waste declaration (MUD)",
-      "Conducted specific risk assessments (chemical, vibrations, manual handling)",
-      "Applied technical regulations (Italian Legislative Decrees 81/08, 152/06, 231/01)"
-    ]
+    "company": "Manutencoop Facility Management S.p.A. / Rekeep S.p.A. — Zola Predosa (BO)",
+    "role": "Health and Safety Officer – ASPP",
+    "period": "03/2017 – 10/2020",
+    "achievements": "Technical support to complex projects through site inspections, **ISO 45001/18001** audits and risk assessments. **QHSE** documentation management, preparation of risk assessments and application of technical regulations (**Legislative Decree 81/08, 152/06**). Data analysis and reporting to support management using **SAP**, **advanced Excel** and **Power BI**."
   },
   {
     "company": "Silea S.p.A. — Valmadrera (LC)",
     "role": "Internship with Alma Mater Studiorum - University of Bologna",
     "period": "06/2015 – 05/2016",
-    "achievements": [
-      "Analyzed the multi-stage flue gas treatment system of an urban and specialised waste incinerator",
-      "Optimised the system to identify critical issues and reduce operating costs by 10%",
-      "Produced regular reports on project progress"
-    ]
+    "achievements": "Analysis and optimization of a flue gas treatment plant, achieving a reduction in operating costs. Preparation of technical reports and monitoring of project progress."
   },
   {
     "company": "Basf S.p.A. — Pontecchio Marconi (BO)",
     "role": "Internship with Alma Mater Studiorum - University of Bologna",
     "period": "10/2014 – 06/2015",
-    "achievements": [
-      "Redesign of a process line",
-      "Technical-economic analysis and safety assessment (HAZOP)",
-      "Use of dedicated software for analysis and technical design"
-    ]
+    "achievements": "Redesign of a process line with technical and economic analysis and safety assessment (HAZOP). Use of specialized software for technical analysis and process design."
   }
 ]

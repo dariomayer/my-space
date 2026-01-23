@@ -61,13 +61,13 @@ export function useCvData(): CvData {
     forceUpdate({});
   }, [i18n.language]); // Dipende da i18n.language
 
-  const language = i18n.language as 'it' | 'en';
+  const language: 'it' | 'en' = i18n.language?.toLowerCase().startsWith('en') ? 'en' : 'it';
 
-  const experiences = language === 'it' ? experiencesIt : experiencesEn;
-  const education = language === 'it' ? educationIt : educationEn;
-  const skills = language === 'it' ? skillsIt : skillsEn;
-  const profile = language === 'it' ? profileIt : profileEn;
-  const certifications = language === 'it' ? certificationsIt : certificationsEn;
+  const experiences = language === 'en' ? experiencesEn : experiencesIt;
+  const education = language === 'en' ? educationEn : educationIt;
+  const skills = language === 'en' ? skillsEn : skillsIt;
+  const profile = language === 'en' ? profileEn : profileIt;
+  const certifications = language === 'en' ? certificationsEn : certificationsIt;
 
   const phone = import.meta.env.VITE_PHONE_NUMBER;
 
