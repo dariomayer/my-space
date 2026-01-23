@@ -1,6 +1,4 @@
 // src/modules/profile/components/cv/download-button.tsx
-'use client';
-
 import { useTranslation } from 'react-i18next';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { CvDocument } from './cv-document';

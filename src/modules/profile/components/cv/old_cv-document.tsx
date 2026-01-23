@@ -15,73 +15,60 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: 20,
-    borderLeftWidth: 5,
-    borderLeftColor: "#0066CC",
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingTop: 12,
-    paddingBottom: 14,
-    backgroundColor: "#FAFBFC",
-    marginHorizontal: 0,
-  },
-  atsKeywords: {
-    fontSize: 1,
-    color: "#FFFFFF",
+    backgroundColor: "#E8F4FD",
+    padding: 16,
+    borderRadius: 6,
+    marginHorizontal: 4,
+
   },
   name: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: "bold",
-    color: "#1A1A2E",
-    marginBottom: 16,
+    color: "#0066CC",
+    marginBottom: 6,
     textAlign: "left",
-    letterSpacing: 0.5,
+    paddingHorizontal: 4,
   },
   title: {
-    fontSize: 13,
+    fontSize: 14,
     fontWeight: "bold",
-    color: "#0066CC",
+    marginVertical: 4,
+    color: "#333333",
     textAlign: "left",
-    textTransform: "uppercase",
-    letterSpacing: 1,
-    marginBottom: 12,
+
   },
-  contactRow: {
+  contactInfo: {
     flexDirection: "row",
+    justifyContent: "flex-start",
+    marginTop: 10,
     flexWrap: "wrap",
-    alignItems: "center",
-    //marginBottom: 10,
-    //marginHorizontal: 4,
+    //backgroundColor: '#F5F7FA',
+    //padding: 6,
+    borderRadius: 4,
   },
   contactItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginRight: 16,
-  },
-  contactItemFirst: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginRight: 16,
-  },
-  contactIcon: {
-    fontSize: 10,
-    color: "#0066CC",
-    fontWeight: "bold",
-    marginRight: 3,
-  },
-  contactValue: {
-    fontSize: 10,
+    fontSize: 10.5,
     color: "#2D3748",
+    paddingHorizontal: 4,
+    fontWeight: "500",
   },
-  dividerLine: {
-    height: 1,
-    backgroundColor: "#E1E4E8",
-    marginVertical: 10,
+  contactLabel: {
+    fontWeight: "bold",
+    color: "#0066CC",
+  },
+  contactSeparator: {
+    fontSize: 10,
+    color: "#333333",
+    paddingHorizontal: 2,
+    alignSelf: "center",
   },
   summary: {
-    fontSize: 10.5,
-    lineHeight: 1.5,
+    fontSize: 11,
+    lineHeight: 1.4,
+    marginTop: 4,
+    marginHorizontal: 4,
     textAlign: "justify",
-    color: "#4A4A4A",
+    color: "#333333",
   },
   section: {
     marginBottom: 18,
@@ -145,13 +132,17 @@ const styles = StyleSheet.create({
   },
   skillsTitle: {
     fontWeight: "bold",
-    fontSize: 10.5,
+    fontSize: 12,
     //marginBottom: 4,
     color: "#0066CC",
   },
+  skillsList: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
   skillItem: {
-    fontSize: 10.5,
-    //lineHeight: 1.4,
+    fontSize: 10,
+    lineHeight: 1.4,
     //marginBottom: 3,
     color: "#555555",
   },
@@ -206,10 +197,7 @@ function MarkdownText({ text, style }: { text: string; style?: any }) {
   return (
     <Text style={style}>
       {parts.map((part, index) => (
-        <Text
-          key={index}
-          style={part.bold ? { fontWeight: "bold" } : undefined}
-        >
+        <Text key={index} style={part.bold ? { fontWeight: "bold" } : undefined}>
           {part.text}
         </Text>
       ))}
@@ -235,49 +223,39 @@ export function CvDocument({ data, language }: CvDocumentProps) {
       <Page size="A4" style={styles.page}>
         {/* Intestazione ATS-friendly con stile moderno */}
         <View style={styles.header}>
-          {/* Nome */}
           <Text style={styles.name}>{data.name.toUpperCase()}</Text>
-          
-          {/* Titolo */}
           <Text style={styles.title}>{data.title}</Text>
 
-          {/* Contatti in riga */}
-          <View style={styles.contactRow}>
-            <View style={styles.contactItemFirst}>
-              <Text style={styles.contactIcon}>Email:</Text>
-              <Text style={styles.contactValue}>{data.email}</Text>
-            </View>
+          <View style={styles.contactInfo}>
+            <Text style={styles.contactItem}>
+              <Text style={styles.contactLabel}>Email:</Text> {data.email}
+            </Text>
+            <Text style={styles.contactSeparator}>|</Text>
             {data.phone && (
-              <View style={styles.contactItem}>
-                <Text style={styles.contactIcon}>Phone:</Text>
-                <Text style={styles.contactValue}>{data.phone}</Text>
-              </View>
+              <>
+                <Text style={styles.contactItem}>
+                  <Text style={styles.contactLabel}>Phone:</Text> {data.phone}
+                </Text>
+                <Text style={styles.contactSeparator}>|</Text>
+              </>
             )}
-            <View style={styles.contactItem}>
-              <Text style={styles.contactIcon}>Location:</Text>
-              <Text style={styles.contactValue}>{data.location}</Text>
-            </View>
-            <View style={styles.contactItem}>
-              <Text style={styles.contactIcon}>LinkedIn:</Text>
-              <Text style={styles.contactValue}>{data.linkedin}</Text>
-            </View>
-            <View style={styles.contactItem}>
-              <Text style={styles.contactIcon}>Web:</Text>
-              <Text style={styles.contactValue}>{data.website}</Text>
-            </View>
+            <Text style={styles.contactItem}>
+              <Text style={styles.contactLabel}>Location:</Text> {data.location}
+            </Text>
+            <Text style={styles.contactSeparator}>|</Text>
+            <Text style={styles.contactItem}>
+              <Text style={styles.contactLabel}>LinkedIn:</Text> {data.linkedin}
+            </Text>
+            <Text style={styles.contactSeparator}>|</Text>
+            <Text style={styles.contactItem}>
+              <Text style={styles.contactLabel}>Web:</Text> {data.website}
+            </Text>
           </View>
 
-          {/* Linea separatrice */}
-          <View style={styles.dividerLine} />
-
-          {/* Profilo Professionale */}
-          <MarkdownText text={data.summary} style={styles.summary} />
-
-          {/* Keywords ATS nascoste */}
-          {/* <Text style={styles.atsKeywords}>
-            Keyword: Building Automation, BMS, KNX, BACnet, Modbus, HVAC, IoT,
-            Smart Buildings, Cloud, Node.js, React
-          </Text> */}
+          {/* Profilo Professionale integrato nell'header */}
+          <View>
+            <MarkdownText text={data.summary} style={styles.summary} />
+          </View>
         </View>
 
         {/* Esperienza Professionale */}
@@ -293,18 +271,13 @@ export function CvDocument({ data, language }: CvDocumentProps) {
                 <Text style={styles.period}>{exp.period}</Text>
               </View>
               {Array.isArray(exp.achievements) ? (
-                exp.achievements.map(
-                  (achievement: string, achIndex: number) => (
-                    <Text key={achIndex} style={styles.achievement}>
-                      - {achievement}
-                    </Text>
-                  ),
-                )
+                exp.achievements.map((achievement: string, achIndex: number) => (
+                  <Text key={achIndex} style={styles.achievement}>
+                    - {achievement}
+                  </Text>
+                ))
               ) : (
-                <MarkdownText
-                  text={exp.achievements}
-                  style={styles.achievement}
-                />
+                <MarkdownText text={exp.achievements} style={styles.achievement} />
               )}
             </View>
           ))}
@@ -312,9 +285,7 @@ export function CvDocument({ data, language }: CvDocumentProps) {
 
         {/* Certificazioni */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>
-            {sectionTitles.certifications}
-          </Text>
+          <Text style={styles.sectionTitle}>{sectionTitles.certifications}</Text>
           {data.certifications.map((cert, index) => (
             <View key={index} style={styles.job}>
               <View style={styles.jobHeader}>
@@ -344,17 +315,17 @@ export function CvDocument({ data, language }: CvDocumentProps) {
           ))}
         </View>
 
-        {/* Competenze */}
+                {/* Competenze */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{sectionTitles.skills}</Text>
           {data.skills.map((category, index) => (
             <View key={index} style={styles.skillsSection}>
-              <Text style={styles.skillItem}>
-                <Text style={styles.skillsTitle}>{category.title}:</Text> {category.skills.join(", ")}
-              </Text>
+              <Text style={styles.skillsTitle}>{category.title}:</Text>
+              <Text style={styles.skillItem}>{category.skills.join(", ")}</Text>
             </View>
           ))}
         </View>
+
       </Page>
     </Document>
   );

@@ -1,5 +1,6 @@
 // src/modules/profile/components/cv/use-cv-data.ts
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 import experiencesIt from '@/modules/profile/content/experiences.it.json';
 import experiencesEn from '@/modules/profile/content/experiences.en.json';
 import educationIt from '@/modules/profile/content/education.it.json';
@@ -53,6 +54,13 @@ type CvData = {
 
 export function useCvData(): CvData {
   const { i18n } = useTranslation();
+  const [, forceUpdate] = useState({});
+  
+  // Forza aggiornamento quando la lingua cambia
+  useEffect(() => {
+    forceUpdate({});
+  }, [i18n.language]); // Dipende da i18n.language
+
   const language = i18n.language as 'it' | 'en';
 
   const experiences = language === 'it' ? experiencesIt : experiencesEn;
