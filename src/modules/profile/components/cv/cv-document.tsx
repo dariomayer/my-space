@@ -1,5 +1,5 @@
 // src/modules/profile/components/cv/cv-document.tsx
-import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { Document, Page, Text, View, StyleSheet, Link } from "@react-pdf/renderer";
 import { parseMarkdownToPdf } from "@/shared/lib/text-parser";
 
 // Usa font standard ATS-friendly - Helvetica è già disponibile in React-PDF
@@ -71,6 +71,11 @@ const styles = StyleSheet.create({
   contactValue: {
     fontSize: 10,
     color: "#2D3748",
+  },
+  contactLink: {
+    fontSize: 10,
+    color: "#0066CC",
+    textDecoration: "underline",
   },
   dividerLine: {
     height: 0.6,
@@ -245,7 +250,9 @@ export function CvDocument({ data, language }: CvDocumentProps) {
           <View style={styles.contactRow}>
             <View style={styles.contactItemFirst}>
               <Text style={styles.contactIcon}>Email:</Text>
-              <Text style={styles.contactValue}>{data.email}</Text>
+              <Link src={`mailto:${data.email}`} style={styles.contactLink}>
+                {data.email}
+              </Link>
             </View>
             {data.phone && (
               <View style={styles.contactItem}>
@@ -259,11 +266,15 @@ export function CvDocument({ data, language }: CvDocumentProps) {
             </View>
             <View style={styles.contactItem}>
               <Text style={styles.contactIcon}>LinkedIn:</Text>
-              <Text style={styles.contactValue}>{data.linkedin}</Text>
+              <Link src={data.linkedin} style={styles.contactLink}>
+                {data.linkedin.replace(/^https?:\/\//, '')}
+              </Link>
             </View>
             <View style={styles.contactItem}>
               <Text style={styles.contactIcon}>Web:</Text>
-              <Text style={styles.contactValue}>{data.website}</Text>
+              <Link src={data.website} style={styles.contactLink}>
+                {data.website.replace(/^https?:\/\//, '')}
+              </Link>
             </View>
           </View>
 
