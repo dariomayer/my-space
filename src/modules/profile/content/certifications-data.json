@@ -1,4 +1,19 @@
 [
+    {
+    "title": "Mastering Modbus RS485 Network Communication",
+    "badgeUrl": "/badges/udemy_logo.png",
+    "certificateUrl": "/certificates/Mastering Modbus RS485.pdf"
+  },
+  {
+    "title": "PLC Programming for HVAC",
+    "badgeUrl": "/badges/udemy_logo.png",
+    "certificateUrl": "/certificates/PLC programming for HVAC.pdf"
+  },
+  {
+    "title": "Introduction to Niagara 4 (FREE)",
+    "badgeUrl": "/badges/n4-intro-badge.png",
+    "certificateUrl": "/certificates/Introduction-to-niagara-4.pdf"
+  },
   {
     "title": "KNX Basic course, partner No. 142582",
     "badgeUrl": "/badges/KNX-basic-partner.png",
@@ -29,5 +44,15 @@
     "title": "Scrum Fundamentals Certified (SFC™)",
     "badgeUrl": "https://www.scrumstudy.com/Scrum-Images/brand-logo/badge-SFC.png",
     "certificateUrl": "https://www.scrumstudy.com/certification/verify?type=SFC&number=871208"
+  },
+  {
+    "title": "RSPP - Prevention and Protection Service Manager qualification",
+    "badgeUrl": "",
+    "certificateUrl": ""
+  },
+  {
+    "title": "ASPP - Prevention and Protection Service Officer qualification",
+    "badgeUrl": "",
+    "certificateUrl": ""
   }
 ]

@@ -319,27 +319,7 @@ export function CvDocument({ data, language }: CvDocumentProps) {
           ))}
         </View>
 
-        {/* Certificazioni */}
-        <View style={styles.section} 
-        //break
-        >
-          <Text style={styles.sectionTitle}>
-            {sectionTitles.certifications}
-          </Text>
-          {data.certifications.map((cert, index) => (
-            <View key={index} style={styles.job} wrap={false}>
-              <View style={styles.jobHeader}>
-                <View>
-                  <Text style={styles.jobTitle}>{cert.title}</Text>
-                  <Text style={styles.company}>{cert.institution}</Text>
-                </View>
-                <Text style={styles.period}>{cert.date}</Text>
-              </View>
-            </View>
-          ))}
-        </View>
-
-        {/* Formazione */}
+                {/* Formazione */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{sectionTitles.education}</Text>
           {data.education.map((edu, index) => (
@@ -354,6 +334,28 @@ export function CvDocument({ data, language }: CvDocumentProps) {
             </View>
           ))}
         </View>
+
+        {/* Certificazioni */}
+        <View style={styles.section} 
+        //break
+        >
+          <Text style={styles.sectionTitle}>
+            {sectionTitles.certifications}
+          </Text>
+          {data.certifications.map((cert, index) => (
+            <View key={index} style={{...styles.job, paddingBottom: 4}} wrap={false}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                <Text>
+                  <Text style={styles.jobTitle}>{cert.title}</Text>
+                  <Text style={styles.company}> | {cert.institution}</Text>
+                </Text>
+                <Text style={styles.period}>{cert.date}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
+
+
 
         {/* Competenze */}
         <View style={styles.section}>

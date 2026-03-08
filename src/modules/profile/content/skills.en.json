@@ -2,20 +2,27 @@
   {
     "title": "Building Automation & Systems",
     "skills": [
-      "HVAC, Fire Protection, CCTV, Lighting",
+      "HVAC, Fire Protection, CCTV, Lighting systems",
       "Troubleshooting",
       "Facility Management",
       "Energy Efficiency",
       "Building Management System",
       "Siemens Desigo CC",
-      "KNX ETS"
+      "Niagara 4",
+      "KNX ETS 6",
+      "KNX",
+      "BacNet",
+      "Modbus",
+      "PLC Programming",
+      "IEC 61131-3",
+      "Functional Block Diagram (FBD)",
+      "Ladder Diagram (LD)"
     ]
   },
   {
     "title": "Cloud & Software Engineering",
     "skills": [
       "AWS (Serverless, SDK)",
-      "IBM Cloud",
       "Node.js",
       "React",
       "JavaScript",

@@ -1,12 +1,27 @@
 [
   {
+    "title": "Mastering Modbus RS485 Network Communication",
+    "institution": "Udemy",
+    "date": "03/2026"
+  },
+  {
+    "title": "PLC Programming for HVAC",
+    "institution": "Udemy",
+    "date": "03/2026"
+  },
+  {
+    "title": "Introduction to Niagara 4 (FREE)",
+    "institution": "Tridium",
+    "date": "02/2026"
+  },
+  {
     "title": "KNX Basic course, partner No. 142582",
     "institution": "KNX Association",
     "date": "01/2026"
   },
   {
     "title": "Domotica (per tecnici dei sistemi di Building Automation)",
-    "institution": "ENEA - Agenzia nazionale per le nuove tecnologie, l'energia e lo sviluppo sostenibile",
+    "institution": "ENEA",
     "date": "09/2025"
   },
   {
@@ -28,5 +43,15 @@
     "title": "Scrum Fundamentals Certified (SFC™)",
     "institution": "SCRUMstudy",
     "date": "09/2021"
+  },
+    {
+    "title": "RSPP - Prevention and Protection Service Manager qualification",
+    "institution": "University of Bologna",
+    "date": "05/2020"
+  },
+  {
+    "title": "ASPP - Prevention and Protection Service Officer qualification",
+    "institution": "Fond. Aldini Valeriani ",
+    "date": "10/2017"
   }
 ]
