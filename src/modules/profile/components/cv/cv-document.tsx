@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     lineHeight: 1.4,
   },
   header: {
-    marginBottom: 20,
+    marginBottom: 18,
     borderLeftWidth: 5,
     borderLeftColor: "#0066CC",
     paddingLeft: 16,
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     color: "#4A4A4A",
   },
   section: {
-    marginBottom: 18,
+    marginBottom: 16,
   },
   sectionTitle: {
     fontSize: 14,
@@ -349,7 +349,7 @@ export function CvDocument({ data, language }: CvDocumentProps) {
                   <Text style={styles.jobTitle}>{cert.title}</Text>
                   <Text style={styles.company}> | {cert.institution}</Text>
                 </Text>
-                <Text style={styles.period}>{cert.date}</Text>
+                <Text style={{...styles.period, marginTop: 4}}>{cert.date}</Text>
               </View>
             </View>
           ))}
