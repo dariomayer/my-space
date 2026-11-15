@@ -22,14 +22,20 @@
   {
     "title": "Cloud & Software Engineering",
     "skills": [
-      "AWS (Serverless, SDK)",
       "Node.js",
       "React",
       "JavaScript",
+      "Python",
+      "Django",
       "Docker",
       "Git",
+      "Node-RED",
+      "Grafana",
+      "SQL",
+      "PostgreSQL",
+      "NOSQL",
       "MongoDB",
-      "NOSQL"
+      "AWS (Serverless, SDK)"
     ]
   },
   {
